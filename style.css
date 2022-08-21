@@ -1,0 +1,481 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content:space-evenly; */
+
+    /* background-image: linear-gradient(to right top,#330537,#300942,#2f0e4c,#132e48,#183663); */
+    background: linear-gradient(to right top, #48074e, #2e0a44, #2f0e4c, #132e48, #235093);
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+
+}
+.headbar{
+
+       padding: 1rem;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       background-color: #390579;
+      
+       color: rgb(201, 198, 198);
+       
+}
+.headbar span{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.headbar #scerch{
+    justify-items: flex-end;
+    margin-left: 2rem;
+    padding: 0.2rem;
+    border: none;
+    outline: none;
+    margin-right: 0rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-items: center; */
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.icon img {
+    height: 90px;
+    width: 80px;
+    margin: 1rem;
+    margin-top: 0;
+
+}
+
+.about span {
+    font-family: 'Bree Serif', serif;
+    font-size: medium;
+    font-weight: 600;
+    color: bisque;
+    padding: 1rem;
+
+
+}
+
+.BoxOfContent {
+
+
+    margin-top: 0.5rem;
+    border: 4px solid#00264D;
+    /* background:linear-gradient(to right top,#00264D 5%,#02386D); */
+    background-color: #00264D;
+    color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 0rem;
+
+
+
+}
+
+.BoxOfContent {
+
+    box-shadow: 0px 10px 45px rgb(30, 1, 45);
+}
+
+header {
+    padding: 1.5rem 1rem;
+    max-width: 800px;
+    width: 100%;
+
+}
+
+header h1 {
+    margin-top: -50px;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: gray;
+    font-family: 'Vast Shadow', cursive;
+    ;
+    text-align: center;
+}
+
+header h2 {
+    font-size: medium;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    color: gray;
+}
+
+header span {
+    background: -webkit-linear-gradient(rgb(255, 145, 0), rgb(119, 1, 208));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#task_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.task_container {
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#task_input {
+    width: 450px;
+
+    flex: 0.8 2 0%;
+    margin-left: 0rem;
+    /* margin-right: 0.5rem; */
+    margin-right: 0.2rem;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #13181f;
+    color: white;
+    font-size: medium;
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+
+#task_input:hover {
+    background-color: #211929;
+}
+
+#Add_task {
+    /* width: 7rem; */
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(21, 167, 152);
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Add_task {
+    box-shadow: 0px 5px 15px rgb(18, 21, 22);
+}
+
+#Add_task:hover {
+    background-color: rgba(3, 190, 178, 0.892);
+    color: black;
+}
+
+
+#task_form span {
+    text-align: center;
+    text-decoration: solid;
+    font-size: medium;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    animation: blinki 2s linear infinite;
+
+}
+
+@keyframes blinki {
+    60% {
+        opacity: 0;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.content #default {
+    text-align: center;
+    color: rgb(109, 100, 113);
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#task_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+    position: relative;
+
+
+}
+
+.task_count {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.task_count h2 {
+    /* padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem; */
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0rem;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: medium;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 450px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.done {
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, rgb(128, 31, 128), rgb(56, 56, 180));
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(187, 187, 187);
+    box-shadow: 0px 5px 10px rgb(16, 17, 18);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.done:hover {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+.delet {
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+   padding: 0.3rem;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, rgb(184, 118, 24), rgb(213, 34, 94));
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(187, 187, 187);
+    box-shadow: 0px 5px 10px rgb(30, 33, 33);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.delet:hover {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+.task img {
+    margin-top: 4px;
+    height: 20px;
+    width: 25px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer button {
+    padding: 0.5rem 0.5rem;
+    /* padding-bottom: 0; */
+    border-radius: 0.1rem;
+    margin: 1rem;
+    margin-bottom: -1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: solid;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right top, #5c0e63, #300942, #2f0e4c, #132e48, #235093);
+    color: gray;
+    box-shadow: 0px 5px 3px rgb(16, 16, 16);
+
+}
+
+footer button:hover {
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.835);
+}
+.links
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: -1.3rem;
+}
+#mail
+{
+    padding: 0.5rem;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 0.5rem;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color:gray;
+    box-shadow: 0px 5px 15px rgb(18, 21, 22);
+    cursor: pointer;
+
+}
+#mail:hover{
+    background:rgb(1, 1, 16);
+     color: rgb(49, 51, 53);
+}
+@media (max-width:730px) {
+    .icon img {
+        height: 70px;
+        width: 60px;
+    }
+
+    header h1 {
+
+        font-size: 1.7rem;
+
+
+    }
+
+    header h2 {
+        font-size: medium;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+        color: gray;
+    }
+
+    #task_input {
+        width: 350px;
+
+    }
+
+    #Add_task {
+        /* width: 4rem; */
+        font-size: 1.2rem;
+        font-weight: 600;
+
+    }
+
+    .content #default {
+        font-size: 20px;
+    }
+
+    .task_count h2 {
+
+        font-size: 0.8rem;
+    }
+
+    .task_text {
+
+        width: 300px;
+        font-size: small;
+    }
+
+    .done {
+        font-size: 1.2rem;
+        font-weight: 500;
+
+    }
+    .delet {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .task img {
+      
+        height: 15px;
+        width: 20px;
+    }
+    footer button {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    #mail
+    {
+    font-size: 21px;
+    }
+}
+@media (max-width:730px) {
+    .headbar span{
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+    }
+    #task_input {
+        width: 300px;
+
+    }
+    .task_text {
+
+        width: 270px;
+        font-size: small;
+    }
+
+}

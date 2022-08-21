@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;
+        family=Acme&amp;family=Bungee+Shade&amp;family=Chonburi&amp;
+        family=Cookie&amp;family=Courgette&amp;family=Faster+One&amp;
+        family=Hind+Vadodara&amp;family=Kdam+Thmor+Pro&amp;family=Koulen&amp;
+        family=M+PLUS+1+Code:wght@200&amp;family=Montserrat+Alternates:ital,wght@1,200&amp;family=PT+Serif&amp;
+        family=Playfair+Display+SC:ital@1&amp;family=Quintessential&amp;family=Rubik+Glitch&amp;family=Rubik+Moonrocks
+        &amp;family=Satisfy&amp;family=Spectral:wght@200&amp;family=Splash&amp;family=Tangerine:wght@700&amp;
+        family=The+Nautigal:wght@700&amp;family=Vast+Shadow&amp;display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Domine&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+      
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="headbar"><span>YOUR TO DO LIST</span>
+    <input type="search" id="scerch" placeholder="scearch your task here &#128269"> </div>
+    <div class="icon"><img src="logo_image/writing.png" alt="">
+    <div class="about"><span>Make your to do list here ✌</span></div></div>
+    <div class="BoxOfContent">
+        <header>
+            <h1>To Do List for <span id="day">monday</span></h1>
+      
+            <h2 id="date">09-20-2022</h2>
+        </header>
+        <div id="task_form">
+            <div class="form_container">
+            <input type="text" id="task_input" placeholder="Type What You Want to Schedule" />
+            <button id="Add_task">Add &#43;</button> 	
+            </div>
+            <span id="error"></span>
+    </div>
+        <div class="task_count">
+            <h2>Task Remaining  = <span id="task_remaining_count">0</span></h2>
+            <h2>Task Done= <span id="task_done_count">0</span></span></h2>
+        </div>
+   
+        <div class="content">
+            <h2 id="default">You dan't have any task to do.</h2>
+             <div id="task_container">
+          </div> 
+        </div>
+        <footer>
+            <!-- <button id="sort_elemet">Sort list</button> -->
+            <button id="delet_all" onclick="window.location.reload(true)">Rfreash</button>
+        </footer>
+        <div class="links">
+
+            <button id="mail" onclick="sendMail()">&#9993;</button>
+            </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
